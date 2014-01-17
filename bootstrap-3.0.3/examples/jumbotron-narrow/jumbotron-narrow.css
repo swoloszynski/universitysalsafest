@@ -374,3 +374,10 @@ background-repeat:repeat-x;*/
 .big-cushion {
   margin-top: 2.5em;
 }
+p {
+  font-family: 'Tinos', serif;
+}
+
+li {
+  font-family: 'Tinos', serif;
+}
