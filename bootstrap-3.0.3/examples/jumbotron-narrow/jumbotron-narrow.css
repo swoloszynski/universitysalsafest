@@ -261,13 +261,25 @@ body {
 }
 
 .schedule-time {
-  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
-.schedule {
+.schedule-middle {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.schedule-item {
+  text-align: center;
+  margin-top: 0px;
   margin-bottom: 10px;
+}
+
+.schedule-bold {
+    font-weight: 600;
 }
 
 .right-aligned {
