@@ -355,3 +355,10 @@ background-repeat:repeat-x;*/
 .light-orange {
   color: #f8844a;
 }
+.cushion {
+  margin-top: .8em;
+}
+
+.big-cushion {
+  margin-top: 3em;
+}
