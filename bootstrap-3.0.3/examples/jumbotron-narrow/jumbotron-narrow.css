@@ -279,7 +279,8 @@ body {
 }
 
 .schedule-bold {
-    font-weight: 600;
+  font-family: brandonMediumBlack, sans-serif;
+  font-weight: 600;
 }
 
 .right-aligned {
@@ -375,9 +376,9 @@ background-repeat:repeat-x;*/
   margin-top: 2.5em;
 }
 p {
-  font-family: 'Tinos', serif;
+  font-family: brandonMedium, sans-serif;
 }
 
 li {
-  /*font-family: 'Tinos', serif;*/
+  font-family: brandonMedium, sans-serif;
 }
