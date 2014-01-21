@@ -16,6 +16,8 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
 
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -24,6 +26,44 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Thanks to Jamy Golden for this artile http://css-plus.com/2010/11/create-a-scrolling-anchor-link-with-jquery/ -->
+    <script>
+      jQuery(document).ready(function(){
+      var topPosition = jQuery('#top').offset().top;
+      var aboutTopPosition = jQuery('#about').offset().top;
+      var scheduleTopPosition = jQuery('#schedule').offset().top;
+      var ticketsTopPosition = jQuery('#tickets').offset().top;
+      var directionsTopPosition = jQuery('#directions').offset().top;
+      var contactTopPosition = jQuery('#contact').offset().top;
+      jQuery('#scrollToAbout').click(function(){
+        jQuery('html, body').animate({scrollTop:aboutTopPosition}, '2000');
+        return false;
+      });
+      jQuery('#scrollToSchedule').click(function(){
+        jQuery('html, body').animate({scrollTop:scheduleTopPosition}, '2000');
+        return false;
+      }); 
+      jQuery('#scrollToTickets').click(function(){
+        jQuery('html, body').animate({scrollTop:ticketsTopPosition}, '2000');
+        return false;
+      }); 
+      jQuery('#scrollToDirections').click(function(){
+        jQuery('html, body').animate({scrollTop:directionsTopPosition}, '2000');
+        return false;
+      }); 
+      jQuery('#scrollToContact').click(function(){
+        jQuery('html, body').animate({scrollTop:contactTopPosition}, '2000');
+        return false;
+      }); 
+      jQuery('.scrollToTop').click(function(){
+        jQuery('html, body').animate({scrollTop:topPosition}, '2000');
+        return false;
+      }); 
+    }); 
+    </script>
+
+
   </head>
 
   <body>
@@ -42,11 +82,11 @@
 
       <div>
         <ul class="nav nav-pills pills-custom nav-justified pull-right header-lines">
-          <li><a class="custom-color" href="#about">About</a></li>
-          <li><a class="custom-color" href="#schedule">Schedule</a></li>
-          <li><a class="custom-color" href="#tickets">Tickets</a></li>
-          <li><a class="custom-color" href="#directions">Directions/Lodging</a></li>
-          <li><a class="custom-color" href="#contact">Contact Us</a></li>
+          <li><a class="custom-color" href="#about" id="scrollToAbout">About</a></li>
+          <li><a class="custom-color" href="#schedule" id="scrollToSchedule">Schedule</a></li>
+          <li><a class="custom-color" href="#tickets" id="scrollToTickets">Tickets</a></li>
+          <li><a class="custom-color" href="#directions" id="scrollToDirections">Directions/Lodging</a></li>
+          <li><a class="custom-color" href="#contact" id="scrollToContact">Contact Us</a></li>
         </ul>
       </div>
 
@@ -58,15 +98,16 @@
       <a id="about"></a>
       <div class="row featurette">
         <div class="col-md-10 col-md-offset-1">
-          <h2 class="featurette-heading light-orange">What is Salsa Fest at UVa? <span class="text-muted">1&nbsp;day, 8&nbsp;workshops, and 1&nbsp;awesome party!</span></h2>
+          <h2 class="featurette-heading light-orange">What is University Salsa Fest? <span class="text-muted">1&nbsp;day, 8&nbsp;workshops, and 1&nbsp;awesome party!</span></h2>
           <p class="lead justified">Working in conjunction with locals to bring the best of Virginia's salsa scene together in Charlottesville, the University Salsa Club presents the University Salsa Fest! The University Salsa Fest is a statewide event that brings together both student and non-student salsa enthusiasts for a day of lessons, workshops, and social dancing. Cheap to students and non-students, the workshops are hosted by salsa gurus from Charlottesville, Northern Virginia, Richmond, DC, Philly, Atlanta, and beyond, including some UVA Alumni, faculty and staff!</p>
           <p class="lead justified">The social dance features live music from a local (434!) salsa band which counts students among its members, as well as DJ Steve Greene, who has headlined the Atlanta and NYC Salsa Congresses. With guest performances from VCU's Muevelo dance team and UVA's Salsa Club, this will be the cultural event of the year.</p>
-          <p class="right-aligned"><a href="#top">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
+          <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
         </div>
       </div>
 
       <hr class="featurette-divider">
-
+    
+      <span class="anchor" id="schedule"></span>
       <a id="schedule"></a>
       <div class="row featurette">
         <div class="col-md-10 col-md-offset-1">
@@ -123,13 +164,14 @@
           <p class="lead schedule-middle schedule-bold">The Party Continues!</p>
           <p class="lead schedule-item">Featuring DJ Steve Greene & Conjunto Sason</p>
 
-          <p class="right-aligned"><a href="#top">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
+          <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
 
         </div>
       </div>
 
       <hr class="featurette-divider">
 
+      <span class="anchor" id="tickets"></span>
       <a id="tickets"></a>
       <div class="row featurette">
         <div class="col-md-10 col-md-offset-1">
@@ -142,26 +184,28 @@
           <div class="jumbotron jumbotron-custom">
             <p><a class="btn btn-lg btn-success disabled cushion" href="#" role="button">Get tickets! (Coming soon)</a></p>
           </div>
-          <p class="right-aligned"><a href="#top">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
+          <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
+      <span class="anchor-bottom" id="directions"></span>
       <a id="directions"></a>
       <div class="row featurette">
         <div class="col-md-10 col-md-offset-1">
           <h2 class="featurette-heading light-orange">Where is it? <span class="text-muted">Come visit us in beautiful Charlottesville!</span></h2>
           <p class="lead center-aligned">University of Virginia Student Activities Building</br>George Welsh Way Charlottesville, VA 29903</p>
           <iframe width="570" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=university+of+virginia+student+activities+building&amp;aq=&amp;sll=38.029434,-78.516369&amp;sspn=0.027618,0.05137&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Student+Activities+Bldg,+Charlottesville,+Virginia+22903&amp;ll=38.031935,-78.514996&amp;spn=0.032451,0.054932&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=university+of+virginia+student+activities+building&amp;aq=&amp;sll=38.029434,-78.516369&amp;sspn=0.027618,0.05137&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Student+Activities+Bldg,+Charlottesville,+Virginia+22903&amp;ll=38.031935,-78.514996&amp;spn=0.032451,0.054932&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-          <p class="right-aligned"><a href="#top">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
           <p class="lead justified">Directions from DC: Take I-66W until Exit 43A and merge on to US-29S/Lee Hwy. Continue for 69 miles, make a slight right onto Stadium Road. Take the 2nd right onto Whitehead Road, turn left onto George Welsh Way. The SAB will be on the corner of George Welsh and Alderman Road. </p>
           <p class="lead justified">Directions from Richmond: Take I-64W, follow signs for I-64W/I-95N/Charlottesville/Washington and merge onto I-95 N. Make a slight right onto I-64 W. Take Exit 118B to merge onto US-29 N toward Charlottesville/Culpeper. Take the US-29 BUS N exit toward Charlottesville, turn right onto US-29 Bus N/Fontaine Ave. Turn left onto Maury Ave, continue on Maury as it turns into Alderman. The SAB will be on the right, at the intersection of Alderman and George Welsh.</p>
+          <p class="right-aligned cushion"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
         </div>
       </div>
 
       <hr class="featurette-divider">
       
+      <span class="anchor-bottom" id="contact"></span>
       <a id="contact"></a>
       <div class="row featurette">
         <div class="col-md-5">
@@ -174,7 +218,7 @@
           <p class="lead cushion"></p>
           <p class="lead center-aligned">Visit our facebook event page <a href="https://www.facebook.com/events/1384888385101203/">here!</a></p>
           <p class="lead center-aligned">Email our Event Coordinator, Shelbey Keegan, <a href="mailto:sak5ee@virginia.edu?subject=Salsa Fest 2014 Inquiry" target="blank">here</a> or at sak5ee@virginia.edu.</p>
-
+          <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
         </div>
       </div>
 
@@ -187,7 +231,6 @@
         <p class="center-aligned">Site built with <a href="http://getbootstrap.com/">Twitter Bootstrap</a>. Thanks to <a href="http://www.magidphoto.com">Yoav Magid Photography</a> and <a href="http://www.salsanerd.com/training/ladies-styling-reg/">Luz Rodriguez</a> for permission to use the header photo, and to University Salsa Club at UVa for permission to use the Contact Us photo. Thanks to <a href="http://www.designerzbase.com/">designerzbase</a> for their free icons.</p>
         <p class="center-aligned small">Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization's contracts, acts or omissions.</p>
       </div>
-
     </div> <!-- /container -->
 
 

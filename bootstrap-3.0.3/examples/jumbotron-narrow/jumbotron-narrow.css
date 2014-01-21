@@ -382,3 +382,17 @@ p {
 li {
   font-family: brandonMedium, sans-serif;
 }
+
+.anchor{
+   display:block;
+   height:100px; /* this is the height of your header */
+   margin-top:-63px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+
+.anchor-bottom{
+   display:block;
+   height:180px; /* this is the height of your header */
+   margin-top:-63px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
