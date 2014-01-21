@@ -309,12 +309,12 @@ body {
 
 @font-face {
    font-family: brandonMedium; 
-   src: url('BrandonGrotesque-Medium.otf');
+   src: url('../fonts/BrandonGrotesque-Medium.otf');
 } 
 
 @font-face {
    font-family: brandonBlack; 
-   src: url('BrandonGrotesque-Black.otf');
+   src: url('../fonts/BrandonGrotesque-Black.otf');
 } 
 
 .biggish {
