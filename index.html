@@ -19,41 +19,7 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
 
-    <!-- Thanks to Jamy Golden for this artile http://css-plus.com/2010/11/create-a-scrolling-anchor-link-with-jquery/ -->
-    <script>
-      jQuery(document).ready(function(){
-      var topPosition = jQuery('#top').offset().top;
-      var aboutTopPosition = jQuery('#about').offset().top;
-      var scheduleTopPosition = jQuery('#schedule').offset().top;
-      var ticketsTopPosition = jQuery('#tickets').offset().top;
-      var directionsTopPosition = jQuery('#directions').offset().top;
-      var contactTopPosition = jQuery('#contact').offset().top;
-      jQuery('#scrollToAbout').click(function(){
-        jQuery('html, body').animate({scrollTop:aboutTopPosition}, '2000');
-        return false;
-      });
-      jQuery('#scrollToSchedule').click(function(){
-        jQuery('html, body').animate({scrollTop:scheduleTopPosition}, '2000');
-        return false;
-      }); 
-      jQuery('#scrollToTickets').click(function(){
-        jQuery('html, body').animate({scrollTop:ticketsTopPosition}, '2000');
-        return false;
-      }); 
-      jQuery('#scrollToDirections').click(function(){
-        jQuery('html, body').animate({scrollTop:directionsTopPosition}, '2000');
-        return false;
-      }); 
-      jQuery('#scrollToContact').click(function(){
-        jQuery('html, body').animate({scrollTop:contactTopPosition}, '2000');
-        return false;
-      }); 
-      jQuery('.scrollToTop').click(function(){
-        jQuery('html, body').animate({scrollTop:topPosition}, '2000');
-        return false;
-      }); 
-    }); 
-    </script>
+    
   </head>
 
   <body>
