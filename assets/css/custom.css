@@ -178,7 +178,7 @@ body {
 /* Thin out the marketing headings */
 .featurette-heading {
   font-family: brandonMedium, sans-serif;
-  margin-top: 60px !important; 
+  margin-top: 60px !important;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
@@ -308,14 +308,14 @@ body {
 }
 
 @font-face {
-   font-family: brandonMedium; 
+   font-family: brandonMedium;
    src: url('../fonts/BrandonGrotesque-Medium.otf');
-} 
+}
 
 @font-face {
-   font-family: brandonBlack; 
+   font-family: brandonBlack;
    src: url('../fonts/BrandonGrotesque-Black.otf');
-} 
+}
 
 .biggish {
   margin: 0px;
@@ -375,6 +375,24 @@ background-repeat:repeat-x;*/
 .big-cushion {
   margin-top: 2.5em;
 }
+
+.light-orange-background {
+  background: #FF774A;
+}
+
+.rsvp-alert-link {
+  color: #1f1a5c;
+}
+
+.rsvp-alert-text {
+  padding-top: 6px;
+}
+
+.navbar-rsvp-alert {
+  min-height: 10px;
+  border: none;
+}
+
 p {
   font-family: brandonMedium, sans-serif;
 }
