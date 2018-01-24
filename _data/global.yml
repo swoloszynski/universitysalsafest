@@ -13,6 +13,7 @@ organizer_email: lca7gt@virginia.edu
 author: Samantha Woloszynski
 
 show_alert: false
+show_schedule: false
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
