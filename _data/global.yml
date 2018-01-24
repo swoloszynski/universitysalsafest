@@ -1,17 +1,14 @@
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Barley & Tern
-# Suggestions: http://www.hipsterbusiness.name/
-email: hello@barleyandtern.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: University Salsa Fest 2018
+description: >-
+  University Salsa Fest at University of Virginia UVA 2018
+year: 2018
+
+organizer_name: Louise Andenmatten
+organizer_email: lca7gt@virginia.edu
+
+author: Samantha Woloszynski
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: barleyandtern
-github_username:  barleyandtern
-google_analytics_id: 'YOUR-GA-ID'
+google_analytics_id: 'UA-91415127-1'
