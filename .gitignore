@@ -1,6 +1,5 @@
 # Ignore docs files
 _gh_pages
-_site
 .ruby-version
 
 # Numerous always-ignore extensions
@@ -38,6 +37,13 @@ validation-status.json
 validation-report.json
 
 # Folders to ignore
-node_modules
 bower_components
 local
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
+_drafts/
+*.swp
+node_modules
