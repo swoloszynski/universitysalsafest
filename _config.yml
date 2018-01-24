@@ -37,6 +37,7 @@ exclude: [
   'yarn.lock',
   'README.md',
   '.travis.yml',
+  'local/',
 ]
 
 sass:
