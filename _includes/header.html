@@ -4,6 +4,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="author" content="{{ site.data.global.author }}">
 
     {% if page.title %}
       <title>{{ page.title }}</title>
@@ -17,7 +18,12 @@
       <meta name="description" content="{{ site.data.global.description }}">
     {% endif %}
 
-    <meta name="author" content="{{ site.data.global.author }}">
+    <!-- Social Sharing -->
+    <meta property="og:url" content="http://universitysalsafest.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ site.data.global.facebook.title }}" />
+    <meta property="og:description" content="{{ site.data.global.facebook.description }}" />
+    <meta property="og:image"  content="{{ site.data.global.facebook.image }}" />
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">

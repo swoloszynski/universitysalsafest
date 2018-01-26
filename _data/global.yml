@@ -21,3 +21,12 @@ show_schedule: false
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics_id: 'UA-91415127-1'
+
+facebook:
+  title: 2018 Charlottesville University Salsa Fest at UVa
+  description: >-
+    The University Salsa Fest at UVa brings the best of Virginia's salsa scene
+    together in Charlottesville, Virginia. Join us on February 24, 2018 for a
+    full day of workshops and a night of social dancing.
+  image: /assets/images/banner-2018.png
+  video: https://youtu.be/iTInz_2xPJM
