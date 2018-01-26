@@ -1,5 +1,8 @@
 # Site settings
+
+# Page title length limit is around 55 chars for SEO
 title: University Salsa Fest 2018
+# Description length limit is <=150 chars for SEO and unique to page
 description: >-
   University Salsa Fest at University of Virginia UVA 2018
 year: 2018
