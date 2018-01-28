@@ -19,6 +19,7 @@ rsvp_deadline: 11:59pm on February 23rd
 show_facebook_event: true
 show_alert: true
 show_schedule: false
+show_sponsors: true
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
