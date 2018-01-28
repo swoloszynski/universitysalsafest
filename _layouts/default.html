@@ -107,6 +107,11 @@
         </div>
       </div>
 
+      {% if site.data.global.show_sponsors %}
+        <hr class="featurette-divider">
+        {% include sponsors.html %}
+      {% endif %}
+
       <!-- /END THE FEATURETTES -->
 
       {% include footer.html %}
