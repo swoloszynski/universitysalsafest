@@ -7,15 +7,16 @@ description: >-
   University Salsa Fest at University of Virginia UVA 2018
 year: 2018
 
-facebook_event_url: https://www.facebook.com/events/1986413301576636/
-rsvp_deadline: 11:59pm on February 23rd
-
 organizer_name: Louise Andenmatten
 organizer_first_name: Louise
 organizer_email: lca7gt@virginia.edu
 
 author: Samantha Woloszynski
 
+facebook_event_url: https://www.facebook.com/events/1986413301576636/
+rsvp_deadline: 11:59pm on February 23rd
+
+show_facebook_event: true
 show_alert: false
 show_schedule: false
 
