@@ -3,7 +3,11 @@
     <div class="container">
         <div class="container row">
             <div class="col-md-10 col-md-offset-1">
-                <p class="center-aligned rsvp-alert-text">RSVP is <strong>required</strong> for admittance! Click "going" on <a class="rsvp-alert-link" href="{{ site.data.global.facebook_event_url }}" target="blank">Facebook</a> or email your name to <a class="rsvp-alert-link" href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} RSVP" target="blank">{{ site.data.global.organizer_first_name }}</a>!</p>
+                <p class="center-aligned rsvp-alert-text">RSVP is <strong>required</strong> for admittance! To RSVP,
+                  {% if site.data.global.show_facebook_event %}
+                    click "going" on <a class="rsvp-alert-link" href="{{ site.data.global.facebook_event_url }}" target="blank">Facebook</a> or
+                  {% endif %}
+                  email your name to <a class="rsvp-alert-link" href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} RSVP" target="blank">{{ site.data.global.organizer_first_name }}</a>!</p>
             </div>
         </div>
     </div>
