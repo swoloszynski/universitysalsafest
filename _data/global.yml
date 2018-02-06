@@ -15,8 +15,11 @@ author: Samantha Woloszynski
 
 facebook_event_url: https://www.facebook.com/events/1986413301576636/
 rsvp_deadline: 11:59pm on February 23rd
+ticket_url: https://securelb.imodules.com/s/1535/16-uva/index.aspx?sid=1535&gid=16&pgid=18854&cid=32408
+online_ticket_deadline: the morning of Friday, February 23rd
 
 show_facebook_event: true
+show_online_ticketing: true
 show_alert: true
 show_schedule: false
 show_sponsors: true
@@ -31,5 +34,5 @@ facebook:
     The University Salsa Fest at UVa brings the best of Virginia's salsa scene
     together in Charlottesville, Virginia. Join us on February 24, 2018 for a
     full day of workshops and a night of social dancing.
-  image: /assets/images/banner-2018.png
+  image: https://universitysalsafest.com/assets/images/banner-2018.png
   video: https://youtu.be/iTInz_2xPJM
