@@ -21,7 +21,7 @@ online_ticket_deadline: the morning of Friday, February 23rd
 show_facebook_event: true
 show_online_ticketing: true
 show_alert: true
-show_schedule: false
+show_schedule: true
 show_sponsors: true
 
 baseurl: "" # the subpath of your site, e.g. /blog
