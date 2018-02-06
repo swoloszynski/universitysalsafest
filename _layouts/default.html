@@ -62,29 +62,7 @@
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-10 col-md-offset-1">
-          <span class="anchor" id="tickets"></span>
-          <a id="tickets"></a>
-          <h2 class="featurette-heading light-orange">How do I get tickets? <span class="text-muted">Purchase online or at the door!</span></h2>
-          <p class="lead schedule-time">General Admission All-Day (Includes Party) <span class="schedule-bold">$20</span></p>
-          <p class="lead schedule-time">General Admission Party-Only Pass <span class="schedule-bold">$10</span></p>
-          <p class="lead schedule-time">Student All-Day (Includes Party, valid student ID required) <span class="schedule-bold">$5</span></p>
-          <p class="lead schedule-time">Registered UVA Salsa Club Member All-Day (Includes Party) <span class="schedule-bold">FREE</span></p>
-          <!-- <p class="lead schedule-time cushion">Online ticketing will close at midnight on Thursday, February 2nd. Tickets at the door are cash only.</p> -->
-          {% if site.data.global.show_facebook_event %}
-              <p class="lead schedule-time cushion">The deadline to <a href="{{ site.data.global.facebook_event_url }}" target="blank">RSVP by clicking "going" on Facebook</a> is {{ site.data.global.rsvp_deadline }}! Don't have Facebook? Please email your name to <a href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} RSVP" target="blank">{{ site.data.global.organizer_first_name }} at {{ site.data.global.organizer_email }}</a>! RSVP is required for admission.</p>
-          {% else %}
-              <p class="lead schedule-time cushion">The deadline to RSVP by emailing your name to <a href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} RSVP" target="blank">{{ site.data.global.organizer_first_name }} at {{ site.data.global.organizer_email }}</a> is {{ site.data.global.rsvp_deadline }}! RSVP is required for admission.</p>
-          {% endif %}
-
-
-          <div class="jumbotron jumbotron-custom">
-            <p><a class="btn btn-lg btn-success cushion disabled" href="#" role="button" target="blank">Online tickets coming soon</a></p>
-          </div>
-          <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
-        </div>
-      </div>
+      {% include tickets.html %}
 
       <hr class="featurette-divider">
 
