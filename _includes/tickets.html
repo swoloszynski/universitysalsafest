@@ -14,12 +14,16 @@
         <p class="lead schedule-time cushion">The deadline to RSVP by emailing your name to <a href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} RSVP" target="blank">{{ site.data.global.organizer_first_name }} at {{ site.data.global.organizer_email }}</a> is {{ site.data.global.rsvp_deadline }}! RSVP is required for admission.</p>
     {% endif %}
 
-    <div class="jumbotron jumbotron-custom">
-      <p><a class="btn btn-lg btn-success cushion disabled" href="#" role="button" target="blank">Online tickets coming soon</a></p>
-    </div>
-
     {% if site.data.global.show_online_ticketing %}
-        <p class="lead schedule-time cushion">Online ticketing will close{{ site.data.global.online_ticket_deadline }}. Tickets at the door are cash only.</p>
+        <div class="jumbotron jumbotron-custom">
+          <p><a class="btn btn-lg btn-success cushion" href="{{ site.data.global.ticket_url }}" role="button" target="blank">Get tickets!</a></p>
+          <p class="lead schedule-time cushion">Online ticketing will close {{ site.data.global.online_ticket_deadline }}. Tickets at the door are cash only.</p>
+        </div>
+    {% else %}
+        <p class="lead schedule-time cushion">Tickets at the door are cash only.</p>
+        <div class="jumbotron jumbotron-custom">
+          <p><a class="btn btn-lg btn-success cushion disabled" href="#" role="button" target="blank">Online tickets coming soon</a></p>
+        </div>
     {% endif %}
 
     <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
