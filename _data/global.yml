@@ -23,6 +23,7 @@ show_online_ticketing: true
 show_alert: true
 show_schedule: true
 show_sponsors: true
+show_mailchimp_footer: true
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
