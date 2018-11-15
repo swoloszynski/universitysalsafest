@@ -1,9 +1,26 @@
-# University Salsa Fest
-## Event Website
+# University Salsa Fest Event Website
 
-### Deploy to staging
+## Local development
 
-To deploy to [the Github hosted page](http://swoloszynski.github.io/universitysalsafest/), merge master into the branch `gh-pages`.
+To run the Jekyll site locally:
+
+```
+(universitysalsafest) [master] $ rvm use 2.2.9
+(universitysalsafest) [master] $ jekyll serve
+```
+
+To run tests:
+
+```
+(universitysalsafest) [master] $ htmlproofer _site/
+```
+
+Add flag `--disable-external` to avoid calling external links.
+
+
+## Jekyll + Github Pages Hosting
+
+To push changes to public GitHub Pages hosting:
 
 ```
 (universitysalsafest) [master] $ git checkout master
@@ -14,12 +31,24 @@ To deploy to [the Github hosted page](http://swoloszynski.github.io/universitysa
 (universitysalsafest) [gh-pages] $ git push
 ```
 
-### Deploy to production
+GitHub Pages automatically manages Jekyll deploys.
 
-1. Log into [Go Daddy](https://www.godaddy.com/).
-2. Click on the account name and go to `Manage Your Hosting`.
-3. Click `Manage` for `universitysalsafest.com`.
-4. Click `File Manager`.
-5. Select `Web Root (public_html/www)` and click `Go`.
-6. Check `Overwrite existing files` and choose files to upload.
-7. Once upload is complete, check [the site](universitysalsafest.com) for your changes.
+## Updating the Ruby Version
+
+```
+(universitysalsafest) [master] $ rvm ls
+(universitysalsafest) [master] $ rvm install 2.2.9
+```
+
+Change the ruby version in the Gemfile.
+
+```
+(universitysalsafest) [master] $ gem install bundler
+(universitysalsafest) [master] $ bundle
+```
+
+Confirm that the `bundle` command automatically changed the ruby version in the Gemfile.lock. Update the ruby version in .ruby-version and .travis.yml.
+
+```
+(universitysalsafest) [master] $ jekyll build
+```
