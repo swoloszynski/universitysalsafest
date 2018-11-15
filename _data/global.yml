@@ -25,7 +25,7 @@ show_online_ticketing: false
 show_alert: false
 show_schedule: false
 show_download_schedule_pdf: false
-schedule_pdf: schedule-2018.pdf
+schedule_pdf: ""
 show_sponsors: true
 show_mailchimp_footer: true
 
