@@ -52,7 +52,10 @@
         <p class="lead schedule-item schedule-bold">Social Dancing with DJ Greene!</p>
 
         <br>
-        <p class="lead center-aligned"><a href="/assets/images/schedule-2018.pdf" class="scrollToTop" target="_blank" rel="noopener"><span class="glyphicon glyphicon-circle-arrow-down"></span>&nbsp;Download Schedule</a></p>
+
+        {% if site.data.global.show_download_schedule_pdf %}
+            <p class="lead center-aligned"><a href="/assets/images/{{ site.data.global.schedule_pdf }}" class="scrollToTop" target="_blank" rel="noopener"><span class="glyphicon glyphicon-circle-arrow-down"></span>&nbsp;Download Schedule</a></p>
+        {% endif %}
 
         <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
 

@@ -9,7 +9,7 @@
     <div class="container" id="big-container">
       <a id="top"></a>
       <div class="container row">
-        <img src="assets/images/banner-2018.png" alt="Banner: Salsa Fest {{ site.data.global.year }}" class="img-responsive img-custom">
+        <img src="assets/images/{{ site.data.global.banner_image }}" alt="Banner: Salsa Fest {{ site.data.global.year }}" class="img-responsive img-custom">
         <p class="cushion"></p>
       </div>
 
@@ -67,22 +67,28 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-5 hidden-xs col-sm-5">
-          <p class="big-cushion"></p>
-          <img class="featurette-image img-responsive" src="assets/images/louise.jpg" alt="Generic placeholder image" style="vertical-align:middle;">
-          <p class="big-cushion"></p>
-        </div>
-        <div class="col-md-7 col-sm-7">
-          <span class="anchor" id="contact"></span>
-          <a id="contact"></a>
-          <h2 class="featurette-heading light-orange">Questions? Suggestions?<span class="text-muted">Let's get in touch!</span></h2>
-          <p class="lead cushion"></p>
-          {% if site.data.global.show_facebook_event %}
-              <p class="lead center-aligned">Join our <a href="{{ site.data.global.facebook_event_url }}" target="_blank" rel="noopener">Facebook event page!</a></p>
+        {% if site.data.global.show_organizer_image %}
+          <div class="col-md-5 hidden-xs col-sm-5">
+            <p class="big-cushion"></p>
+            <img class="featurette-image img-responsive" src="assets/images/{{ site.data.global.organizer_image }}" alt="Generic placeholder image" style="vertical-align:middle;">
+            <p class="big-cushion"></p>
+          </div>
         {% endif %}
-           <p class="lead center-aligned">Email event coordinator <a href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} Inquiry" target="_blank" rel="noopener">{{ site.data.global.organizer_name }} at {{ site.data.global.organizer_email }}</a> with inquiries.</p>
-          <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
-        </div>
+        {% if site.data.global.show_organizer_image %}
+          <div class="col-md-7 col-sm-7">
+        {% else %}
+          <div class="col-md-12 col-sm-12">
+        {% endif %}
+            <span class="anchor" id="contact"></span>
+            <a id="contact"></a>
+            <h2 class="featurette-heading light-orange">Questions? Suggestions?<span class="text-muted">Let's get in touch!</span></h2>
+            <p class="lead cushion"></p>
+            {% if site.data.global.show_facebook_event %}
+                <p class="lead center-aligned">Join our <a href="{{ site.data.global.facebook_event_url }}" target="_blank" rel="noopener">Facebook event page!</a></p>
+            {% endif %}
+             <p class="lead center-aligned">Email event coordinator <a href="mailto:{{ site.data.global.organizer_email }}?subject={{ site.data.global.title }} Inquiry" target="_blank" rel="noopener">{{ site.data.global.organizer_name }} at {{ site.data.global.organizer_email }}</a> with inquiries.</p>
+            <p class="right-aligned"><a href="#top" class="scrollToTop">Back to top  <span class="glyphicon glyphicon-circle-arrow-up"></span></a></p>
+          </div>
       </div>
 
       {% if site.data.global.show_sponsors %}
