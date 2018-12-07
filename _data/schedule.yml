@@ -1,0 +1,55 @@
+---
+- time: 11:30 AM - 12:20 PM
+  title: Edwin Roa, Charlottesville
+  description: Kizomba
+  description_line_two:
+
+- time: 12:30 PM - 1:20 PM
+  title: Michelle Garcia, Boston
+  description: On2 Salsa Body Movement and Footwork
+  description_line_two:
+
+- time: 1:30 PM - 2:20 PM
+  title: Shaka Brown, DC
+  description: Cha-Cha Jam
+  description_line_two:
+
+- time: 2:30 PM - 3:20 PM
+  title: Brian Le, DC
+  description: Modern/Urban Bachata
+  description_line_two:
+
+- time: 3:30 PM - 4:20 PM
+  title: Rosalia and Alejandro, Buenos Aires, Argentina
+  description: Tango
+  description_line_two:
+
+- time: 4:30 PM - 5:20 PM
+  title: Maria Krupholter, DC
+  description: Salsa On2 Footwork and Partnerwork
+  description_line_two:
+
+- time: 5:30 PM - 6:20 PM
+  title: Stephen Jackson
+  description: Bachata with an Urban Funk and Cha-Cha twist
+  description_line_two:
+
+- time: 6:30 - 8:30 PM
+  title: Dinner Break
+  description:
+  description_line_two:
+
+- time: 8:30 - 10:30 PM
+  title: Party + Dancing with DJ Stephen Greene
+  description:
+  description_line_two:
+
+- time: 10:30 - 11:00 PM
+  title: Performances
+  description: Featuring University Salsa Club, DNC 2 BEAT, Volante,
+  description_line_two: Yamulee Project DC, Shaka Brown, and Rosalia and Alejandro
+
+- time: 11:00 PM - 2:00 AM
+  title: The Party Continues!
+  description:
+  description_line_two:
