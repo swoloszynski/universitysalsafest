@@ -4,52 +4,24 @@
         <a id="schedule"></a>
         <h2 class="featurette-heading light-orange">Schedule <span class="text-muted">So how's it going down?</span></h2>
 
-        <p class="lead schedule-time light-orange schedule-bold">10:30 AM - 11:20 AM</p>
-        <p class="lead schedule-middle schedule-bold">Edwin Roa, Charlottesville</p>
-        <p class="lead schedule-item">Kizomba</p>
 
-        <p class="lead schedule-time light-orange schedule-bold">11:30 AM - 12:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Brian Le, DC</p>
-        <p class="lead schedule-item">Modern/Urban Bachata</p>
+        {% for workshop in site.data.schedule %}
 
-        <p class="lead schedule-time light-orange schedule-bold">12:30 PM - 1:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Shaka Brown, DC</p>
-        <p class="lead schedule-middle">Salsa On1 Partnerwork</p>
+            <p class="lead schedule-time light-orange schedule-bold">{{ workshop.time }}</p>
 
-        <p class="lead schedule-time light-orange schedule-bold">1:30 PM - 2:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Allison Hurst and Sam Woloszynski, Boston and DC</p>
-        <p class="lead schedule-item">On2 Salsa</p>
+            <p class="lead schedule-middle schedule-bold">{{ workshop.title }}</p>
 
-        <p class="lead schedule-time light-orange schedule-bold">2:30 PM - 3:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Stephen Jackson, Virginia</p>
-        <p class="lead schedule-item">Sensual Bachata</p>
-
-        <p class="lead schedule-time light-orange schedule-bold">3:30 PM - 4:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Maria Krupholter, DC</p>
-        <p class="lead schedule-item">Intermediate Salsa On2 Footwork and Partnerwork</p>
-
-        <p class="lead schedule-time light-orange schedule-bold">4:30 PM - 5:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Orlando Machuca, DC</p>
-        <p class="lead schedule-item">Salsa On1 Partnerwork</p>
-
-        <p class="lead schedule-time light-orange schedule-bold">5:30 PM - 6:20 PM</p>
-        <p class="lead schedule-middle schedule-bold">Shaka Brown, DC</p>
-        <p class="lead schedule-item">On2 Cha-cha</p>
-
-        <p class="lead schedule-time light-orange schedule-bold">6:30 PM - 8:30 PM</p>
-        <p class="lead schedule-item schedule-bold">Dinner Break</p>
-
-        <p class="lead schedule-time light-orange schedule-bold">8:30 PM - 10:30 PM</p>
-        <p class="lead schedule-item schedule-bold">Social Dancing with DJ Greene</p>
+            {% if workshop.description %}
+                {% if workshop.description_line_two %}
+                    <p class="lead schedule-middle">{{ workshop.description }}</p>
+                    <p class="lead schedule-item">{{ workshop.description_line_two }}</p>
+                {% else %}
+                    <p class="lead schedule-item">{{ workshop.description }}</p>
+                {% endif %}
+            {% endif %}
 
 
-        <p class="lead schedule-time light-orange schedule-bold">10:30 PM - 11:00 PM</p>
-        <p class="lead schedule-middle schedule-bold">Performances</p>
-        <p class="lead schedule-middle">Featuring DNC 2 BEAT, </p>
-        <p class="lead schedule-item">Yamulee Project DC, and UVA Salsa Club</p>
-
-        <p class="lead schedule-time light-orange schedule-bold">11:00 PM - 2:00 AM</p>
-        <p class="lead schedule-item schedule-bold">Social Dancing with DJ Greene!</p>
+        {% endfor %}
 
         <br>
 
