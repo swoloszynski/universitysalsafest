@@ -25,7 +25,7 @@ online_ticket_deadline: the morning of Friday, February 22nd
 show_facebook_event: false
 show_online_ticketing: false
 show_alert: false
-show_schedule: false
+show_schedule: true
 show_download_schedule_pdf: false
 schedule_pdf: ""
 show_sponsors: true
