@@ -28,8 +28,8 @@ show_online_ticketing: true
 show_facebook_event: false
 show_alert: false
 show_schedule: true
-show_download_schedule_pdf: false
-schedule_pdf: ""
+show_download_schedule_pdf: true
+schedule_pdf: "schedule-2019.pdf"
 show_sponsors: true
 show_mailchimp_footer: true
 
