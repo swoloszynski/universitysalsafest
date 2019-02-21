@@ -3,10 +3,14 @@
   <div class="row">
     <div class="col-md-12">
       <p class="lead cushion"></p>
-      <h2 class="center-aligned text-muted sponsors-heading">Thanks to our sponsor:</h2>
+      <h2 class="center-aligned text-muted sponsors-heading">Thanks to our sponsors:</h2>
     </div>
     <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center">
-      <img class="featurette-image img-responsive custom-img" src="assets/images/uvaParentsFundLogo.png" alt="UVa Parents Fund Logo" style="vertical-align:middle;">
+
+      {% for sponsor in site.data.sponsors %}
+          <p class="lead center-aligned"><a href="{{ sponsor.link }}" target="_blank" rel="noopener">{{ sponsor.name }}</a></p>
+      {% endfor %}
+
     </div>
   </div>
   <div class="col-md-12">
