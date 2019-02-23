@@ -23,7 +23,11 @@ rsvp_deadline: 11:59pm on February 22nd
 online_ticket_deadline: 11:59pm on February 22nd
 
 ticket_url:  https://securelb.imodules.com/s/1535/16-uva/index.aspx?sid=1535&gid=16&pgid=20641&cid=35424
+# show_online_ticketing: false will show "coming soon" message
 show_online_ticketing: true
+# show_online_ticketing: true AND online_ticketing_closed: true will
+# show "online ticketing closed; door-only" message
+online_ticketing_closed: true
 
 show_facebook_event: false
 show_alert: false
