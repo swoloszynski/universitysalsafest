@@ -10,13 +10,22 @@
 
 
     {% if site.data.global.show_online_ticketing %}
-        <div class="jumbotron jumbotron-custom">
-          <p><a class="btn btn-lg btn-success cushion" href="{{ site.data.global.ticket_url }}" role="button" target="_blank" rel="noopener">Get tickets!</a></p>
-        </div>
-        <p class="lead schedule-time cushion">Tickets are available online and at the door on a first-come, first-serve basis. Online ticketing will close at {{ site.data.global.online_ticket_deadline }}.</p>
-        <p class="lead schedule-time cushion">Event attendance is expected to reach capacity. Please consider purchasing a ticket in advance to avoid being turned away at the door if tickets are sold out.</p>
+        {% if site.data.global.online_ticketing_closed %}
+            <div class="jumbotron jumbotron-custom">
+              <p><a class="btn btn-lg btn-success cushion disabled" role="button" target="_blank" rel="noopener">Online ticketing has closed</a></p>
+            </div>
+
+            <p class="lead schedule-time cushion">Tickets are available at the door on a first-come, first-serve basis. Cash and credit cards accepted.</p>
+        {% else %}
+
+            <div class="jumbotron jumbotron-custom">
+              <p><a class="btn btn-lg btn-success cushion" href="{{ site.data.global.ticket_url }}" role="button" target="_blank" rel="noopener">Get tickets!</a></p>
+            </div>
+            <p class="lead schedule-time cushion">Tickets are available online and at the door on a first-come, first-serve basis. Online ticketing will close at {{ site.data.global.online_ticket_deadline }}.</p>
+            <p class="lead schedule-time cushion">Event attendance is expected to reach capacity. Please consider purchasing a ticket in advance to avoid being turned away at the door if tickets are sold out.</p>
+        {% endif %}
+
     {% else %}
-        <p class="lead schedule-time cushion">Tickets at the door are cash only.</p>
         <div class="jumbotron jumbotron-custom">
           <p><a class="btn btn-lg btn-success cushion disabled" role="button" target="_blank" rel="noopener">Online tickets coming soon</a></p>
         </div>
